@@ -245,8 +245,8 @@
   <!-- From Columbus... -->
   <g transform="translate(10, 48)" class="msg-2">
     <rect width="420" height="66.1302" rx="18.0355" class="bubble" />
-    <text x="15" y="27"> Ex-Software Engineer at FAANG companies </text>
-    <text x="15" y="50"> Loves AI and Blockchain </text>
+    <text x="15" y="27"> a prev founder for a web3 startup </text>
+    <text x="15" y="50"> Loves AI, Fintech, web3 and Blockchain </text>
   </g>
 
   <!-- typing 5 -->
@@ -270,7 +270,7 @@
   <!-- Thanks -->
   <g transform="translate(10, 120)" class="msg-5">
     <rect width="440" height="42.1302" rx="18.0355" class="bubble" />
-    <text x="15" y="27"> Entrepreneur and Avid opensource contributor </text>    
+    <text x="15" y="27"> Entrepreneur and opensource contributor </text>    
   </g> 
 
 
@@ -280,12 +280,13 @@
   <!-- Have a great... -->
   <g transform="translate(10, 168)" class="msg-7">
     <rect width="550" height="42" rx="18.0355" class="bubble" />
-    <text x="15" y="27"> Reach out via hello.dagim@gmail.com or <a xlink:href="https://x.com/dagimzer369">@dagimzer369</a></text>
+    <text x="15" y="27"> Reach out via hello.dagim@gmail.com or <a xlink:href="https://x.com/dagimzer369">@dagimzer369 on 𝕏/Twitter
+</a></text>
   </g>
 
   <!-- Top Repos -->
   <g transform="translate(10, 216)" class="msg-8">
     <rect width="480" height="42" rx="18.0355" class="bubble" />
-    <text x="15" y="27">Here are my top repos <a xlink:href="https://ishandutta2007.github.io/star-history-user/?user=ishandutta2007">Top Repos ishandutta2007</a></text>
+    <text x="15" y="27">join my public telegram channel <a xlink:href="https://t.me/dagimzer"> </a></text>
   </g>
 </svg>
