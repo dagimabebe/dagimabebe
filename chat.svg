@@ -284,15 +284,6 @@
 </a></text>
   </g>
 
-  <g transform="translate(10, 0)" class="msg-1 bubble">
-    <rect width="170" height="42" rx="18.0355" />
-    <text x="15" y="27">Reach out via hello.dagim@gmail.com</text>
-  </g>
-  <g transform="translate(10, 0)" class="msg-1 bubble">
-    <rect width="170" height="42" rx="18.0355" />
-    <text x="15" y="27">let's connect on 𝕏 too<a xlink:href="https://x.com/dagimzer369">@dagimzer369
-</a></text>
-  </g>
   <!-- Top Repos -->
 <g transform="translate(10, 216)" class="msg-8">
     <rect width="480" height="42" rx="18.0355" class="bubble" />
