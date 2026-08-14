@@ -4,26 +4,13 @@
   viewBox="0 0 550 270"
   fill="none"
   xmlns="http://www.w3.org/2000/svg"
-  role="img"
-  aria-labelledby="svg-title svg-description"
 >
-  <title id="svg-title">Dagim's contact links</title>
-
-  <desc id="svg-description">
-    Animated chat bubbles containing an email address, an X profile link,
-    and a public Telegram channel link.
-  </desc>
-
   <style>
-    :root {
-      color-scheme: light dark;
-    }
-
     .bubble {
       fill: #e9e9eb;
     }
 
-    .text {
+    text {
       fill: #242424;
       font-size: 18px;
       font-family:
@@ -31,122 +18,160 @@
         -apple-system,
         BlinkMacSystemFont,
         "Segoe UI",
-        Roboto,
         Helvetica,
         Arial,
         sans-serif;
       letter-spacing: -0.02em;
-      dominant-baseline: middle;
     }
 
-    .link-text {
+    .emoji {
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Helvetica,
+        Arial,
+        sans-serif,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol";
+    }
+
+    a {
       fill: #0079ff;
       text-decoration: none;
-    }
-
-    .link-text:hover,
-    .link-text:focus {
-      text-decoration: underline;
-    }
-
-    .email-link,
-    .x-link,
-    .telegram-link {
       cursor: pointer;
     }
 
-    .telegram-circle {
-      fill: #0088cc;
+    a:hover text {
+      fill: #0066d6;
     }
-
-    .telegram-icon {
-      fill: #ffffff;
-    }
-
-    .message,
-    .typing-indicator {
-      opacity: 0;
-      transform-box: fill-box;
-      transform-origin: center;
-    }
-
-    /*
-      Animation timing:
-      Message 1: 1.7 seconds
-      Message 2: 4.2 seconds
-      Message 5: 6.7 seconds
-      Message 7: 9.2 seconds
-      Message 8: 11.7 seconds
-    */
 
     .typing-1 {
-      animation: typing 1.5s ease-in-out 0s both;
+      opacity: 0;
+      animation: fade-in-out 1.5s;
     }
 
-    .message-1 {
-      animation: message-in 0.25s ease-out 1.7s both;
+    .msg-1 {
+      animation:
+        wait 1.7s,
+        msg-1 0.2s 1.7s forwards;
     }
 
     .typing-2 {
-      animation: typing 1.5s ease-in-out 2.5s both;
+      opacity: 0;
+      animation:
+        wait 2.5s,
+        fade-in-out 1.5s 2.5s;
     }
 
-    .message-2 {
-      animation: message-in 0.25s ease-out 4.2s both;
+    .msg-2 {
+      animation:
+        wait 4.2s,
+        msg-2 0.2s 4.2s forwards;
     }
 
     .typing-5 {
-      animation: typing 1.5s ease-in-out 5s both;
+      opacity: 0;
+      animation:
+        wait 5s,
+        fade-in-out 1.5s 5s;
     }
 
-    .message-5 {
-      animation: message-in 0.25s ease-out 6.7s both;
+    .msg-5 {
+      animation:
+        wait 6.7s,
+        msg-5 0.2s 6.7s forwards;
     }
 
-    .message-7 {
-      animation: message-in 0.25s ease-out 9.2s both;
+    .msg-7 {
+      animation:
+        wait 9.2s,
+        msg-7 0.2s 9.2s forwards;
     }
 
-    .message-8 {
-      animation: message-in 0.25s ease-out 11.7s both;
+    .msg-8 {
+      animation:
+        wait 11.7s,
+        msg-8 0.2s 11.7s forwards;
     }
 
-    @keyframes typing {
-      0% {
+    @keyframes wait {
+      0%,
+      100% {
+        opacity: 0;
+      }
+    }
+
+    @keyframes fade-in-out {
+      0%,
+      100% {
         opacity: 0;
       }
 
       25%,
-      80% {
+      90% {
         opacity: 1;
-      }
-
-      100% {
-        opacity: 0;
       }
     }
 
-    @keyframes message-in {
+    @keyframes msg-1 {
       0% {
         opacity: 0;
-        transform: translateY(5px);
+        transform: translate(10px, 5px);
       }
 
       100% {
         opacity: 1;
-        transform: translateY(0);
+        transform: translate(10px, 0);
       }
     }
 
-    @media (prefers-reduced-motion: reduce) {
-      .typing-indicator {
-        display: none;
+    @keyframes msg-2 {
+      0% {
+        opacity: 0;
+        transform: translate(10px, 53px);
       }
 
-      .message {
+      100% {
         opacity: 1;
-        animation: none;
-        transform: none;
+        transform: translate(10px, 48px);
+      }
+    }
+
+    @keyframes msg-5 {
+      0% {
+        opacity: 0;
+        transform: translate(10px, 125px);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translate(10px, 120px);
+      }
+    }
+
+    @keyframes msg-7 {
+      0% {
+        opacity: 0;
+        transform: translate(10px, 173px);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translate(10px, 168px);
+      }
+    }
+
+    @keyframes msg-8 {
+      0% {
+        opacity: 0;
+        transform: translate(10px, 221px);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translate(10px, 216px);
       }
     }
 
@@ -155,246 +180,107 @@
         fill: #3b3b3d;
       }
 
-      .text {
+      text {
         fill: #dcdcdc;
       }
 
-      .link-text {
-        fill: #4d9cff;
+      a {
+        fill: #0c82f9;
       }
 
-      .telegram-circle {
-        fill: #229ed9;
+      a:hover text {
+        fill: #55a8ff;
       }
     }
   </style>
 
   <!-- Typing indicator 1 -->
-  <g
-    class="typing-indicator typing-1"
-    transform="translate(10 0)"
-    aria-hidden="true"
-  >
-    <rect
-      class="bubble"
-      width="72"
-      height="42"
-      rx="18"
-    />
+  <g transform="translate(10, 0)" class="typing-1">
+    <rect width="68" height="42" rx="18.0355" class="bubble" />
 
-    <circle cx="24" cy="21" r="4" fill="#777777" />
-    <circle cx="36" cy="21" r="4" fill="#777777" />
-    <circle cx="48" cy="21" r="4" fill="#777777" />
+    <circle cx="24" cy="21" r="4" fill="#8e8e93" />
+    <circle cx="34" cy="21" r="4" fill="#8e8e93" />
+    <circle cx="44" cy="21" r="4" fill="#8e8e93" />
   </g>
 
   <!-- Message 1 -->
-  <g
-    class="message message-1"
-    transform="translate(10 0)"
-  >
-    <rect
-      class="bubble"
-      width="330"
-      height="42"
-      rx="18"
-    />
+  <g transform="translate(10, 0)" class="msg-1">
+    <rect width="350" height="42" rx="18.0355" class="bubble" />
 
-    <text
-      class="text"
-      x="15"
-      y="21"
-    >
-      Hey! I’m Dagim.
+    <text x="15" y="27">
+      Hey, I'm Dagim Zeru 👋
     </text>
   </g>
 
   <!-- Typing indicator 2 -->
-  <g
-    class="typing-indicator typing-2"
-    transform="translate(10 48)"
-    aria-hidden="true"
-  >
-    <rect
-      class="bubble"
-      width="72"
-      height="42"
-      rx="18"
-    />
+  <g transform="translate(10, 48)" class="typing-2">
+    <rect width="68" height="42" rx="18.0355" class="bubble" />
 
-    <circle cx="24" cy="69" r="4" fill="#777777" />
-    <circle cx="36" cy="69" r="4" fill="#777777" />
-    <circle cx="48" cy="69" r="4" fill="#777777" />
+    <circle cx="24" cy="21" r="4" fill="#8e8e93" />
+    <circle cx="34" cy="21" r="4" fill="#8e8e93" />
+    <circle cx="44" cy="21" r="4" fill="#8e8e93" />
   </g>
 
   <!-- Message 2 -->
-  <g
-    class="message message-2"
-    transform="translate(10 48)"
-  >
-    <rect
-      class="bubble"
-      width="430"
-      height="42"
-      rx="18"
-    />
+  <g transform="translate(10, 48)" class="msg-2">
+    <rect width="500" height="42" rx="18.0355" class="bubble" />
 
-    <text
-      class="text"
-      x="15"
-      y="21"
-    >
-      I build useful Web3 products.
+    <text x="15" y="27">
+      Blockchain developer &amp; Web3 builder
     </text>
   </g>
 
   <!-- Typing indicator 5 -->
-  <g
-    class="typing-indicator typing-5"
-    transform="translate(10 120)"
-    aria-hidden="true"
-  >
-    <rect
-      class="bubble"
-      width="72"
-      height="42"
-      rx="18"
-    />
+  <g transform="translate(10, 120)" class="typing-5">
+    <rect width="68" height="42" rx="18.0355" class="bubble" />
 
-    <circle cx="24" cy="141" r="4" fill="#777777" />
-    <circle cx="36" cy="141" r="4" fill="#777777" />
-    <circle cx="48" cy="141" r="4" fill="#777777" />
+    <circle cx="24" cy="21" r="4" fill="#8e8e93" />
+    <circle cx="34" cy="21" r="4" fill="#8e8e93" />
+    <circle cx="44" cy="21" r="4" fill="#8e8e93" />
   </g>
 
   <!-- Message 5 -->
-  <g
-    class="message message-5"
-    transform="translate(10 120)"
-  >
-    <rect
-      class="bubble"
-      width="470"
-      height="42"
-      rx="18"
-    />
+  <g transform="translate(10, 120)" class="msg-5">
+    <rect width="530" height="42" rx="18.0355" class="bubble" />
 
-    <text
-      class="text"
-      x="15"
-      y="21"
-    >
-      Have a great day! Let’s connect.
+    <text x="15" y="27">
+      Building useful tools for a decentralized future 🚀
     </text>
   </g>
 
-  <!-- Message 7: Email and X links -->
-  <g
-    class="message message-7"
-    transform="translate(10 168)"
-  >
-    <rect
-      class="bubble"
-      width="550"
-      height="42"
-      rx="18"
-    />
+  <!-- Contact Message -->
+  <g transform="translate(10, 168)" class="msg-7">
+    <rect width="550" height="42" rx="18.0355" class="bubble" />
 
-    <!-- Email link -->
-    <a
-      class="email-link"
-      href="mailto:hello.dagim@gmail.com"
-      aria-label="Send an email to hello.dagim@gmail.com"
-    >
-      <text
-        class="text link-text"
-        x="15"
-        y="21"
-      >
-        hello.dagim@gmail.com
+    <a href="mailto:hello.dagim@gmail.com">
+      <text x="15" y="27">
+        Reach out via hello.dagim@gmail.com
       </text>
     </a>
 
-    <!-- Separator -->
-    <text
-      class="text"
-      x="212"
-      y="21"
-      aria-hidden="true"
-    >
-      or
-    </text>
+    <text x="390" y="27">or</text>
 
-    <!-- X link -->
-    <a
-      class="x-link"
-      href="https://x.com/dagimzer"
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label="Visit Dagim on X"
-    >
-      <text
-        class="text link-text"
-        x="245"
-        y="21"
-      >
-        𝕏
-      </text>
+    <a href="https://x.com/dagimzer" target="_blank">
+      <text x="420" y="27" class="emoji">𝕏</text>
     </a>
   </g>
 
-  <!-- Message 8: Telegram link -->
-  <g
-    class="message message-8"
-    transform="translate(10 216)"
-  >
-    <rect
-      class="bubble"
-      width="480"
-      height="42"
-      rx="18"
-    />
+  <!-- Telegram Message -->
+  <g transform="translate(10, 216)" class="msg-8">
+    <rect width="550" height="42" rx="18.0355" class="bubble" />
 
-    <a
-      class="telegram-link"
-      href="https://t.me/dagimzer"
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label="Join Dagim's public Telegram channel"
-    >
-      <!-- Telegram icon -->
-      <g transform="translate(10 9)">
-        <circle
-          class="telegram-circle"
-          cx="12"
-          cy="12"
-          r="12"
-        />
+    <a href="https://t.me/dagimzer" target="_blank">
+      <!-- Telegram logo -->
+      <g transform="translate(15, 9)">
+        <circle cx="12" cy="12" r="12" fill="#0088cc" />
 
         <path
-          class="telegram-icon"
-          d="
-            M9.04 15.51
-            l-.38 5.34
-            c.54 0 .78-.24 1.06-.52
-            l2.55-2.44
-            5.28 3.87
-            c.97.53 1.66.25 1.92-.9
-            l3.48-16.39
-            c.31-1.44-.52-2-1.46-1.65
-            L2.32 9.59
-            c-1.39.54-1.37 1.31-.24 1.65
-            l5.05 1.58
-            L19.46 5.6
-            c.55-.36 1.05-.16.64.2
-            L9.04 15.51z
-          "
+          fill="#ffffff"
+          d="M9.04 15.51l-.38 5.34c.54 0 .78-.24 1.06-.52l2.55-2.44 5.28 3.87c.97.53 1.66.25 1.92-.9l3.48-16.39c.31-1.44-.52-2-1.46-1.65L2.32 9.59c-1.39.54-1.37 1.31-.24 1.65l5.05 1.58L19.46 5.6c.55-.36 1.05-.16.64.2L9.04 15.51z"
         />
       </g>
 
-      <text
-        class="text link-text"
-        x="42"
-        y="21"
-      >
+      <text x="45" y="27">
         Join my public Telegram channel
       </text>
     </a>
