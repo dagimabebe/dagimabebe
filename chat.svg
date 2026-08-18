@@ -277,13 +277,13 @@
 
 
   <!-- Have a great... -->
-  <g transform="translate(10, 168)" class="msg-7">
+  <g transform="translate(10, 120)" class="msg-7">
     <rect width="550" height="42" rx="18.0355" class="bubble" />
     <text x="15" y="27"> Reach out via hello.dagim@gmail.com or ð•</text>
   </g>
 
   <!-- Top Repos -->
-<g transform="translate(10, 216)" class="msg-8">
+<g transform="translate(10, 120)" class="msg-8">
     <rect width="480" height="42" rx="18.0355" class="bubble" />
 
     <a href="https://t.me/dagimzer" target="_blank">
