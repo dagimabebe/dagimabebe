@@ -246,7 +246,7 @@
   <g transform="translate(10, 48)" class="msg-2">
     <rect width="420" height="66.1302" rx="18.0355" class="bubble" />
     <text x="15" y="27"> a prev founder for a web3 startup </text>
-    <text x="15" y="50">open-source contibutor and community lead</text>
+    <text x="15" y="50">open-source contibutor and community leader</text>
   </g>
 
   <!-- typing 5 -->
@@ -270,7 +270,7 @@
   <!-- Thanks -->
   <g transform="translate(10, 120)" class="msg-5">
     <rect width="440" height="42.1302" rx="18.0355" class="bubble" />
-    <text x="15" y="27">Passionate about AI, Fintech, Web3, and Open Source</text>    
+    <text x="15" y="27">Passionate about AI, Fintech, Web3,and DeFi</text>    
   </g> 
 
 
