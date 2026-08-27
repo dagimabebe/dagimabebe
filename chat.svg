@@ -285,7 +285,7 @@
             <circle cx="12" cy="12" r="12" fill="#0088cc" />
             <path fill="#ffffff" d="M9.04 15.51l-.38 5.34c.54 0 .78-.24 1.06-.52l2.55-2.44 5.28 3.87c.97.53 1.66.25 1.92-.9l3.48-16.39c.31-1.44-.52-2-1.46-1.65L2.32 9.59c-1.39.54-1.37 1.31-.24 1.65l5.05 1.58L19.46 5.6c.55-.36 1.05-.16.64.2L9.04 15.51z" />
         </g>
-    <text x="15" y="27">join my public telegram channel @dagimzer </text>
+    <text x="42" y="27">join my public telegram channel @dagimzer </text>
      </a>
   </g>
 
@@ -303,7 +303,7 @@
             <path fill="#ffffff" d="M9.04 15.51l-.38 5.34c.54 0 .78-.24 1.06-.52l2.55-2.44 5.28 3.87c.97.53 1.66.25 1.92-.9l3.48-16.39c.31-1.44-.52-2-1.46-1.65L2.32 9.59c-1.39.54-1.37 1.31-.24 1.65l5.05 1.58L19.46 5.6c.55-.36 1.05-.16.64.2L9.04 15.51z" />
         </g>
 
-        <text x="42" y="27">wanna talk? Reach out via hello.dagim@gmail.com</text>
+        <text x="15" y="27">wanna talk? Reach out via hello.dagim@gmail.com</text>
     </a>
 </g>
   <!-- Top Repos -->
